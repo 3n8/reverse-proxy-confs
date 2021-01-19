@@ -1,5 +1,8 @@
 ## Version 2020/12/09
 # make sure that your dns has a cname set for znc
+# To additionally port foward the irc port uncomment the stream section in /config/nginx/nginx.conf, Add SSL port 6502 and append these lines (without #) to znc.conf:
+#TrustedProxy = 0.0.0.0
+#TrustedProxy = ::1
 
 server {
     listen 443 ssl;
